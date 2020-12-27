@@ -1,0 +1,93 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.kotlin_version = "1.4.20"
+    repositories {
+        google()
+        jcenter()
+    }
+    //
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+ext {
+    // Sdk and Tools
+    min_sdk_version = 23
+    target_sdk_version = 30
+    compile_sdk_version = 30
+
+
+    //-----------------------------------
+    // Lifecycle
+    lifecycle_version = "2.2.0"
+
+    // ----------------------------------
+    // Rx
+    rxjava_version = '3.0.3'
+    rxandroid_version = '3.0.0'
+
+    //--------------------------------------
+
+    // Networking
+    retrofit_version = '2.9.0'
+    okhttp_version = '3.14.9'
+
+    // Converter
+    retrofit_converter_moshi = '2.4.0'
+    retrofit_converter_gson = '2.9.0'
+
+    // Parser
+    gson_version = '2.8.6'
+
+
+    // --------------------------------
+
+    // Image
+    glide_version = '4.11.0'
+
+    //---------------------------------------------------------------------------
+
+
+
+    // DB
+    room_version = '2.2.5'
+    debug_db_version = '1.0.6'
+
+    //---------------------------------------------------------------------------
+
+    // Dagger
+    dagger_version = '2.28.3'
+
+
+    //---------------------------------------------------------------------------
+
+    // Logging
+    timber_version = '4.7.1'
+
+    // Tests
+    junit_version = '4.13.1'
+    test_runner_version = '1.1.2'
+    espresso_version = '3.3.0'
+
+    core_testing_version = '1.1.1'
+    test_ext_runner_version = '1.1.0'
+
+    mockito_version = '3.6.28'
+    hamcrest_version = '2.1'
+}
+
