@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Instagram Project L16</string>
+    <string name="app_name">DemoInsta</string>
 
     <!--    network msg-->
     <string name="network_connection_error">Internet connection lost, please retry again</string>
